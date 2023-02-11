@@ -1,71 +1,62 @@
 .whole-page {
-  background-color: rgb(218, 218, 218);
-}
-
-.image-section {
-  max-width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  filter: brightness(70%);
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
-
-.main-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.main-image img {
-  max-width: 100%;
-}
-.main-image .image1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.main-image .image2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-}
-
-.words-container {
+.whole-page .hero-container {
   display: flex;
   flex-direction: column;
+  height: 50rem;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(/images/IMG_1651.jpg);
+  background-size: 5rem 10rem;
+}
+.whole-page .hero-container .navbar {
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100%;
   z-index: 10;
-  position: absolute;
-  border: 1px solid blue;
-  filter: brightness(100%);
 }
-.words-container h1 {
+.whole-page .hero-container .navbar .nav-left {
+  padding: 0 15px;
+}
+.whole-page .hero-container .navbar .nav-right {
+  padding: 0 20px;
+}
+.whole-page .hero-container .words-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.whole-page .hero-container .words-container h1 {
   font-size: 67px;
-  filter: brightness(120%);
 }
-.words-container p {
+.whole-page .hero-container .words-container p {
   font-size: 20px;
-  filter: brightness(120%);
 }
-.words-container a {
+.whole-page .hero-container .words-container a {
   text-decoration: none;
   color: white;
   background-color: #e91e63;
   padding: 15px 33px;
   border-radius: 3px;
 }
-
-.main-section {
+.whole-page .main-section {
+  height: 100%;
+  width: 97%;
   justify-content: center;
   align-items: center;
   background-color: white;
   color: gray;
-  border: 1px solid red;
-  z-index: 5;
-  margin: 0 30px;
-  width: 96%;
-  position: absolute;
-  top: 750px;
+  border-radius: 25px;
+  margin-top: -40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.3);
 }/*# sourceMappingURL=home-page.css.map */

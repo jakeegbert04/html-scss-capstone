@@ -6,4 +6,8 @@ html, body {
   font-family: "Lato", sans-serif;
   font-family: "Roboto", sans-serif;
   color: white;
+}
+html a, body a {
+  text-decoration: none;
+  color: #555555;
 }/*# sourceMappingURL=common.css.map */
