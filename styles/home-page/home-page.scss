@@ -1,67 +1,87 @@
-body {
-  background-color: #3c4858;
-}
 
 .whole-page {
+  background-color: rgb(218 218 218);
+}
+
 .image-section {
   max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  filter: brightness(70%);
+}
 
-    .main-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
 
-    .image1 {
+.main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    img {
+      max-width: 100%;
+    }
+
+      .image1 {
           display: flex;
           justify-content: center;
           align-items: center;
           position: relative;
         }
         
-    .image2 {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: absolute;
-        }
+        .image2 {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: absolute;
+            }
+}
+
         
-      }
-      .words-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 10;
-        position: absolute;
-        border: 1px solid blue;
-    
-          h1 {
-            font-size: 67px;
-          }
+      
+.words-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  position: absolute;
+  border: 1px solid blue;
+  filter: brightness(100%);
 
-          p {
-            font-size: 20px;
-          }
-          
+  h1 {
+    font-size: 67px;
+    filter: brightness(120%);
+  }
 
-          a{
-            text-decoration: none;
-            color: white;
-            background-color: #e91e63;
-            padding: 15px 33px;
-            border-radius: 3px;
-          }
-        }
+      p {
+        font-size: 20px;
+        filter: brightness(120%);
       }
+  
+
+      a{
+        text-decoration: none;
+        color: white;
+        background-color: #e91e63;
+        padding: 15px 33px;
+        border-radius: 3px;
+      }
+      
+}
 .main-section {
+  justify-content: center;
+  align-items: center;
   background-color: white;
+  color: gray;
   border: 1px solid red;
   z-index: 5;
+  margin: 0 30px;
+  width: 96%;
+  top:750px;
 } 
 
+.footer
 
-}
+
+
 
