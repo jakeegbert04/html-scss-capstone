@@ -34,16 +34,6 @@
         justify-content: flex-start;
         margin-left: 10%;
       }
-    .nav-bar {
-      .nav-right{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 10px;
-        border: 1px soild red;
-      }
-
-    }
     } 
     .words-container {
       height: 100%;
@@ -88,21 +78,186 @@
     .above-image-section {
       display: flex;
       flex-direction: column;
-      border: 1px solid red;
+      justify-content: center;
+      padding: 30px 0;
 
       .title {
         display: flex;
         justify-content: center;
 
         h2 {
-          color: black
+          color: #3c4858;
         }
       }
       .top-icons {
         display: flex;
         justify-content: center;
+        gap: 4%;
+
+        .icon {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          img {
+           object-fit: contain; 
+          }
+        }
+        p {
+          font-size: 14px;
+          margin: 0 0 10px;
+        }
+        h5 {
+          font-size: 18px;
+          color: #3c4858;
+        }
       }
     }
+    
   } 
+  .image-section {
+    display:grid;
+    max-width: 100%;
+    height:300px;
+    grid-template-columns: 50% 50%;
+    background-image: url(/images/DSC00109.jpg);
+    background-size: contain;
+    background-color: transparent;
 
+    .left-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        color: #fff;
+      }
+  
+      p{
+        color: #fefefe; 
+      }
+    }
+    .right-section {
+      display: flex;
+      border:1px solid red;
+
+      img {
+        max-width: 80%;
+      }
+    }
+
+  }
+  .blog-section {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0;
+    
+    .title {
+      display: flex;
+      justify-content: center;
+      font-size: 37px;
+      color: #3c4858;
+      margin-bottom: 60px;
+    }
+    .icons {
+      display: flex;
+      justify-content: space-around;
+      
+      .name {
+        font-size: 12px;
+      }
+
+      h4 {
+        font-size: 18px;
+      }
+
+      .left-icon {
+        display: flex;
+        flex-direction: column;
+
+          .name {
+            color: #89229b;
+            font-size: 12px;
+          }
+      }
+      .middle-icon {
+        display: flex;
+        flex-direction: column;
+
+          .name {
+            color: #00bcd4;
+            font-size: 12px;
+          }
+        .read-more {
+          color: #23527c;
+        }
+      }
+      .right-icon {
+        display: flex;
+        flex-direction: column;
+
+          .name {
+            color: #f44336;
+            font-size: 12px;
+          }
+      } 
+    }
+  }
+  .contact-section {
+    display: flex;
+    width: 100%;
+    background-image: url(/images/jake\ egbert\ 4.jpg);
+    background-size:unset;
+    
+    h2 {
+      color: white;
+    }
+    h4 {
+      color: #ffffff;
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+      color: #eaeaea;
+    }
+    
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      margin: 40px 130px;
+    }
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background: #323437;
+    width: 100%;
+    padding: 30px 0 18px;
+
+    
+    .left-footer {
+      display: flex;
+      gap: 10px;
+      
+      
+      a {
+        color: #fff;
+
+        &:hover {
+          opacity: .86;
+        }
+        
+      }
+    }
+    .right-footer {
+      
+      a {
+        color: #fff;
+      }
+    }
+  }
 }
