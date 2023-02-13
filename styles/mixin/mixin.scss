@@ -1,5 +1,3 @@
-@import url(/pages/navbar/contact.html);
-
 @mixin navbar {
   height:5%;
       display: flex;
@@ -22,4 +20,9 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
+}
+
+
+.main-ryan-container {
+  @include whole-page();
 }

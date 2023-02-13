@@ -1,1 +1,7 @@
-@import url(/pages/navbar/contact.html);/*# sourceMappingURL=mixin.css.map */
+.main-ryan-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}/*# sourceMappingURL=mixin.css.map */

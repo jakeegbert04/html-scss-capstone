@@ -1,3 +1,11 @@
+.main-ryan-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
 .whole-page {
   display: flex;
   align-items: center;
@@ -257,4 +265,4 @@
 }
 .footer .right-footer a {
   color: #fff;
-}/*# sourceMappingURL=home-page.css.map */
+}/*# sourceMappingURL=main.css.map */
