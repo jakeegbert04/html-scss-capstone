@@ -1,0 +1,116 @@
+.page-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .navbar {
+      height:5%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      background-color: white;
+      width:100%;
+      padding: 7px 0;
+      z-index: 10;
+      box-shadow: -3px 4px 27px -5px rgba(0,0,0,0.75);
+      -webkit-box-shadow: -3px 4px 27px -5px rgba(0,0,0,0.75);
+      -moz-box-shadow: -3px 4px 27px -5px rgba(0,0,0,0.75);
+      
+      .nav-left {
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px 3px;
+        background-color: transparent;
+        font-size: 18px;
+      }
+      .nav-right {
+        display: flex;
+        
+        a {
+          font-size: 12px;
+          background-color: transparent;
+          padding: 12px 15px;
+  
+          &:hover {
+            cursor: pointer;
+            color: #e91e63;
+          }
+  
+        }
+  
+        a:last-child {
+          background-color: #e91e63;
+          border-radius: 18px;
+          color: white;
+  
+          &:hover {
+            box-shadow: 0px 5px 20px #e91e63;
+          }
+        }
+        a:nth-child(3) {
+          color:#e91e63;
+  
+          &:hover {
+            opacity: .86;
+          }
+        }
+      }
+    }
+    .i-frame {
+      display: flex;
+      width: 100%;
+
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+
+  .main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .contact-section {
+      width: 100%;
+      display: grid;
+      padding: 50px 0;
+      grid-template-columns: 1.5fr 1fr;
+      border: 1px solid blue;
+
+      .send-message {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 1;
+        justify-content: space-around;
+        padding-left: 25%;
+
+        h1 {
+          color: #3c4858;
+        }
+      }
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid red;
+        grid-column-start: 2;
+        padding: 10px;
+        
+        .top {
+
+        }
+      }
+    }
+  }
+}

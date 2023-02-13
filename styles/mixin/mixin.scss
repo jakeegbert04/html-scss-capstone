@@ -1,0 +1,25 @@
+@import url(/pages/navbar/contact.html);
+
+@mixin navbar {
+  height:5%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      background-color: white;
+      width:100%;
+      padding: 7px 0;
+      z-index: 10;
+      box-shadow: -3px 4px 27px -5px rgba(0,0,0,0.75);
+      -webkit-box-shadow: -3px 4px 27px -5px rgba(0,0,0,0.75);
+      -moz-box-shadow: -3px 4px 27px -5px rgba(0,0,0,0.75);
+}
+
+@mixin whole-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
