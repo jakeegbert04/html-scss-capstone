@@ -11,8 +11,9 @@
     flex-direction: column;
     height: 50rem;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),url(/images/IMG_1651.jpg);
-    background-size: 5rem 10rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),url(/images/DSC08311-HDR.jpg);
+    background-size: 100% 100%;
+    background-repeat: none;
     // border: 1px solid aqua;
 
     .navbar {
@@ -159,8 +160,9 @@
     height:300px;
     grid-template-columns: 50% 50%;
     background-image: url(/images/DSC00109.jpg);
-    background-size: contain;
-    background-color: transparent;
+    background-size: 100% 100%;
+    background-repeat: none;
+    background-attachment: fixed;
 
     .left-section{
       display: flex;
@@ -245,8 +247,10 @@
   .contact-section {
     display: flex;
     width: 100%;
-    background-image: url(/images/jake\ egbert\ 4.jpg);
-    background-size:unset;
+    background-image: url(/images/DSC00109.jpg);
+    background-size: 100% 100%;
+    background-repeat: none;
+    background-attachment: fixed;
     
     h2 {
       color: white;

@@ -8,7 +8,7 @@
   .top-container {
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 380px;
     width: 100%;
     background-color: #e91e63;
 
@@ -83,7 +83,7 @@
     align-items: center;
     background-color: white;
     color: gray;
-    border: 1px solid red;
+    // border: 1px solid red;
     border-radius: 25px;
     margin-top: -40px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1),0 12px 40px 0 rgba(0, 0, 0, 0.3);
@@ -95,17 +95,135 @@
       flex-direction: column;
       justify-content: flex-end;
       padding: 20px 0;
-      gap: 50px;
-      border: 1px solid green;
+      gap: 60px;
+      // border: 1px solid green;
+
+      .link {
+        font-size: 14px;
+
+        &:hover {
+          transition: .3s;
+          opacity: .86;
+        }
+      }
+
+      .link2 {
+        font-size: 25px;
+        color: #3c4858;
+
+        &:hover {
+          transition: .3s;
+          opacity: .86;
+        }
+      }
+
+      .description {
+        font-size: 14px;
+        color:#3c4858;
+
+        a{
+          &:hover {
+            transition: .3s;
+            opacity: .86;
+          }
+        }
+      }
+
+      .theme-admin {
+        font-size: 14px;
+
+        a {
+          color:#3c4858;
+
+          &:hover {
+            transition: .3s;
+            opacity: .86;
+          }
+        }
+      }
 
       .thousand-words {
         display: flex;
-        flex-direction: column; 
-        align-items:flex-start;
-        border: 1px solid black;
+        flex-direction: column;
+        .link {
+          a {
+            color: #89229b;
+          }
+        }
       }
-
+      .elements {
+        .link {
+          a {
+            color: #00bcd4;
+          }
+        }
+      }
+      .more-tags {
+        .link {
+          a {
+            color: #f44336;
+          }
+        }
+      }
+      .html {
+        .link {
+          a {
+            color: #ff9800;
+          }
+        }
+      }
+      .links {
+        .link {
+          a {
+            color: #e91e63;
+          }
+        }
+      }
+      .category {
+        .link {
+          a {
+            color: #4caf50;
+          }
+        }
+      }
+      .hello-world {
+        .link {
+          a {
+            color: #89229b;
+          }
+        }
+      }
     }
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background: #323437;
+    width: 100%;
+    padding: 30px 0 18px;
+
     
+    .left-footer {
+      display: flex;
+      gap: 10px;
+      
+      
+      a {
+        color: #fff;
+
+        &:hover {
+          opacity: .86;
+        }
+        
+      }
+    }
+    .right-footer {
+      
+      a {
+        color: #fff;
+      }
+    }
   }
 }
