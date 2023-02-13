@@ -18,7 +18,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   background-color: white;
   width: 100%;
@@ -34,9 +35,6 @@
   padding: 10px 3px;
   background-color: transparent;
   font-size: 18px;
-}
-.whole-page .hero-container .navbar .nav-left:hover {
-  cursor: pointer;
 }
 .whole-page .hero-container .navbar .nav-right {
   display: flex;
@@ -57,6 +55,12 @@
 }
 .whole-page .hero-container .navbar .nav-right a:last-child:hover {
   box-shadow: 0px 5px 20px #e91e63;
+}
+.whole-page .hero-container .navbar .nav-right a:nth-child(3) {
+  color: #e91e63;
+}
+.whole-page .hero-container .navbar .nav-right a:nth-child(3):hover {
+  opacity: 0.86;
 }
 .whole-page .words-container {
   height: 100%;

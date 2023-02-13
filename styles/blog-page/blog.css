@@ -1,0 +1,99 @@
+.page-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.page-container .top-container {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 100%;
+  background-color: #e91e63;
+}
+.page-container .top-container .navbar {
+  height: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  padding: 17px 0;
+  z-index: 10;
+  box-shadow: -3px 4px 27px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 4px 27px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 4px 27px -5px rgba(0, 0, 0, 0.75);
+}
+.page-container .top-container .navbar .nav-left {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 3px;
+  background-color: transparent;
+  font-size: 18px;
+}
+.page-container .top-container .navbar .nav-right {
+  display: flex;
+}
+.page-container .top-container .navbar .nav-right a {
+  font-size: 12px;
+  background-color: transparent;
+  padding: 12px 15px;
+}
+.page-container .top-container .navbar .nav-right a:hover {
+  cursor: pointer;
+  color: #e91e63;
+}
+.page-container .top-container .navbar .nav-right a:last-child {
+  background-color: #e91e63;
+  border-radius: 18px;
+  color: white;
+}
+.page-container .top-container .navbar .nav-right a:last-child:hover {
+  box-shadow: 0px 5px 20px #e91e63;
+}
+.page-container .top-container .navbar .nav-right a:nth-child(2) {
+  color: #e91e63;
+}
+.page-container .top-container .navbar .nav-right a:nth-child(2):hover {
+  opacity: 0.86;
+}
+.page-container .top-container .header {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+}
+.page-container .main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 97%;
+  padding: 40px 0;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: gray;
+  border: 1px solid red;
+  border-radius: 25px;
+  margin-top: -40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.3);
+}
+.page-container .main-container .main-content {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 0;
+  gap: 50px;
+  border: 1px solid green;
+}
+.page-container .main-container .main-content .thousand-words {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid black;
+}/*# sourceMappingURL=blog.css.map */
