@@ -1,2 +1,7 @@
-@import "./mixin/mixin.scss";
-@import "./home-page/home-page.scss";
+@import "common/common.scss";
+@import "whole-page/whole-page.scss";
+@import "navbar/navbar.scss";
+@import "home-page/home-page.scss";
+@import "contact-page/contact-page.scss";
+@import "blog-page/blog.scss";
+@import "footer/footer.scss";

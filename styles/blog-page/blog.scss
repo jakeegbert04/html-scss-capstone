@@ -1,228 +1,142 @@
-.page-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-
-  .top-container {
-    display: flex;
-    flex-direction: column;
-    height: 380px;
-    width: 100%;
-    background-color: #e91e63;
-
-    .navbar {
-      height:5%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      background-color: white;
-      width:100%;
-      padding: 17px 0;
-      z-index: 10;
-      box-shadow: -3px 4px 27px -5px rgba(0,0,0,0.75);
-      -webkit-box-shadow: -3px 4px 27px -5px rgba(0,0,0,0.75);
-      -moz-box-shadow: -3px 4px 27px -5px rgba(0,0,0,0.75);
-      
-      .nav-left {
-        display: flex;
-        justify-content: flex-start;
-        padding: 10px 3px;
-        background-color: transparent;
-        font-size: 18px;
-      }
-      .nav-right {
-        display: flex;
-        
-        a {
-          font-size: 12px;
-          background-color: transparent;
-          padding: 12px 15px;
-  
-          &:hover {
-            cursor: pointer;
-            color: #e91e63;
-          }
-  
-        }
-  
-        a:last-child {
-          background-color: #e91e63;
-          border-radius: 18px;
-          color: white;
-  
-          &:hover {
-            box-shadow: 0px 5px 20px #e91e63;
-          }
-        }
-        a:nth-child(2) {
-          color:#e91e63;
-  
-          &:hover {
-            opacity: .86;
-          }
-        }
-      }
-    }
-    .header {
-      display: flex;
-      justify-content: center;
-      margin-top: 7%;
+.navbar {
+  .nav-right {
+    &:nth-child(2) {
+      color:#e91e63;
     }
   }
-  .main-container {
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  height: 260px;
+  width: 100%;
+  background-color: #e91e63;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  width: 97%;
+  padding: 40px 0;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: gray;
+  // border: 1px solid red;
+  border-radius: 25px;
+  margin-top: -40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1),0 12px 40px 0 rgba(0, 0, 0, 0.3);
+
+  .main-content {
+    height: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    height:100%;
-    width: 97%;
-    padding: 40px 0;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    color: gray;
-    // border: 1px solid red;
-    border-radius: 25px;
-    margin-top: -40px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1),0 12px 40px 0 rgba(0, 0, 0, 0.3);
+    justify-content: flex-end;
+    padding: 20px 0;
+    gap: 60px;
+    // border: 1px solid green;
 
-    .main-content {
-      height: 100%;
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 20px 0;
-      gap: 60px;
-      // border: 1px solid green;
+    .link {
+      font-size: 14px;
 
-      .link {
-        font-size: 14px;
+      &:hover {
+        transition: .3s;
+        opacity: .86;
+      }
+    }
 
+    .link2 {
+      font-size: 25px;
+      color: #3c4858;
+
+      &:hover {
+        transition: .3s;
+        opacity: .86;
+      }
+    }
+
+    .description {
+      font-size: 14px;
+      color:#3c4858;
+
+      a{
         &:hover {
           transition: .3s;
           opacity: .86;
         }
       }
+    }
 
-      .link2 {
-        font-size: 25px;
-        color: #3c4858;
+    .theme-admin {
+      font-size: 14px;
 
-        &:hover {
-          transition: .3s;
-          opacity: .86;
-        }
-      }
-
-      .description {
-        font-size: 14px;
+      a {
         color:#3c4858;
 
-        a{
-          &:hover {
-            transition: .3s;
-            opacity: .86;
-          }
-        }
-      }
-
-      .theme-admin {
-        font-size: 14px;
-
-        a {
-          color:#3c4858;
-
-          &:hover {
-            transition: .3s;
-            opacity: .86;
-          }
-        }
-      }
-
-      .thousand-words {
-        display: flex;
-        flex-direction: column;
-        .link {
-          a {
-            color: #89229b;
-          }
-        }
-      }
-      .elements {
-        .link {
-          a {
-            color: #00bcd4;
-          }
-        }
-      }
-      .more-tags {
-        .link {
-          a {
-            color: #f44336;
-          }
-        }
-      }
-      .html {
-        .link {
-          a {
-            color: #ff9800;
-          }
-        }
-      }
-      .links {
-        .link {
-          a {
-            color: #e91e63;
-          }
-        }
-      }
-      .category {
-        .link {
-          a {
-            color: #4caf50;
-          }
-        }
-      }
-      .hello-world {
-        .link {
-          a {
-            color: #89229b;
-          }
-        }
-      }
-    }
-  }
-  .footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    background: #323437;
-    width: 100%;
-    padding: 30px 0 18px;
-
-    
-    .left-footer {
-      display: flex;
-      gap: 10px;
-      
-      
-      a {
-        color: #fff;
-
         &:hover {
+          transition: .3s;
           opacity: .86;
         }
-        
       }
     }
-    .right-footer {
-      
-      a {
-        color: #fff;
+
+    .thousand-words {
+      display: flex;
+      flex-direction: column;
+      .link {
+        a {
+          color: #89229b;
+        }
+      }
+    }
+    .elements {
+      .link {
+        a {
+          color: #00bcd4;
+        }
+      }
+    }
+    .more-tags {
+      .link {
+        a {
+          color: #f44336;
+        }
+      }
+    }
+    .html {
+      .link {
+        a {
+          color: #ff9800;
+        }
+      }
+    }
+    .links {
+      .link {
+        a {
+          color: #e91e63;
+        }
+      }
+    }
+    .category {
+      .link {
+        a {
+          color: #4caf50;
+        }
+      }
+    }
+    .hello-world {
+      .link {
+        a {
+          color: #89229b;
+        }
       }
     }
   }

@@ -1,1 +1,84 @@
-/*# sourceMappingURL=about.css.map */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  height: 260px;
+  width: 100%;
+  background-color: #e91e63;
+}
+.hero-container .header {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  height: 100%;
+  width: 97%;
+}
+.main-container li {
+  color: #3c4858;
+  font-size: 18px;
+}
+.main-container p {
+  color: #3c4858;
+  font-size: 18px;
+}
+.main-container h3 {
+  color: #3c4858;
+  font-size: 27px;
+}
+.main-container h2 {
+  color: #3c4858;
+  font-size: 37px;
+}
+.main-container .main-content {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: f;
+  padding: 20px;
+  gap: 10px;
+}
+.main-container .main-content a {
+  color: #e91e63;
+}
+.main-container .main-content a:hover {
+  opacity: 0.86;
+  transition: 0.3s;
+}
+.main-container .main-content .top-paragraph {
+  display: flex;
+  justify-content: center;
+}
+.main-container .main-content .lists {
+  display: flex;
+}
+.main-container .main-content .comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .main-content .comments .title {
+  display: flex;
+  justify-content: center;
+}
+.main-container .main-content .comments .discription {
+  display: flex;
+}
+.main-container .main-content .comments .user-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.main-container .main-content .comments .user-container .image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 40%;
+  border-radius: 50%;
+}/*# sourceMappingURL=about.css.map */
